@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre Sushi Paradise, restaurante de sushi con sabores japoneses, rollos especiales y reservaciones.">
+  <title>Sushi Paradise | Restaurante Japonés</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <header class="encabezado">
+    <a class="logo" href="#inicio">
+      <span class="logo-icono">寿</span>
+      <span>Sushi <b>Paradise</b><small>EL ARTE DEL SABOR JAPONÉS</small></span>
+    </a>
+
+    <button class="boton-menu" id="botonMenu" aria-label="Abrir menú" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="navegacion" id="navegacion">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#galeria">Galería</a>
+      <a href="#reservaciones">Reservaciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-contenido">
+        <span class="etiqueta">UNA EXPERIENCIA JAPONESA</span>
+        <h1>El sabor de Japón<br>en cada <span>bocado.</span></h1>
+        <p>Descubre sabores extraordinarios, ingredientes frescos y el arte de preparar sushi con pasión.</p>
+        <div class="hero-botones">
+          <a href="#menu" class="boton boton-rojo">Explorar menú ↗</a>
+          <a href="#reservaciones" class="boton boton-borde">Reservar mesa</a>
+        </div>
+        <div class="hero-datos">
+          <div><strong>100%</strong><span>Sabor y calidad</span></div>
+          <div><strong>Fresco</strong><span>Todos los días</span></div>
+          <div><strong>Japón</strong><span>Inspiración original</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="nosotros">
+      <div class="presentacion">
+        <div class="presentacion-imagen">
+          <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=85" alt="Variedad de sushi presentado en un plato">
+          <div class="sello">和<br><small>ARMONÍA</small></div>
+        </div>
+        <div class="presentacion-texto">
+          <span class="etiqueta">NUESTRA ESENCIA</span>
+          <h2>Más que sushi,<br>una <span>experiencia.</span></h2>
+          <p>En Sushi Paradise celebramos la gastronomía japonesa con platillos llenos de color, creatividad y sabor.</p>
+          <p>Queremos que cada visita sea especial, desde el primer rollo hasta el último bocado.</p>
+          <div class="caracteristicas">
+            <div><span>✦</span><div><strong>Ingredientes frescos</strong><small>Calidad en cada preparación</small></div></div>
+            <div><span>✦</span><div><strong>Preparación cuidadosa</strong><small>Atención a cada detalle</small></div></div>
+            <div><span>✦</span><div><strong>Ambiente acogedor</strong><small>Un lugar para disfrutar</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-oscura" id="menu">
+      <div class="seccion-titulo">
+        <span class="etiqueta">DESCUBRE NUESTROS SABORES</span>
+        <h2>Nuestro <span>menú</span></h2>
+        <p>Encuentra tu nuevo platillo favorito.</p>
+      </div>
+
+      <div class="filtros">
+        <button class="filtro activo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="rollos">Rollos</button>
+        <button class="filtro" data-filtro="nigiri">Nigiri</button>
+        <button class="filtro" data-filtro="bebidas">Bebidas</button>
+      </div>
+
+      <div class="productos">
+        <article class="producto" data-categoria="rollos">
+          <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=700&q=80" alt="California roll">
+          <div class="producto-info"><span class="producto-tipo">FAVORITO</span><h3>California Roll</h3><p>Aguacate, pepino y surimi.</p><div class="producto-pie"><strong>$95 MXN</strong><button class="agregar" data-producto="California Roll">Elegir +</button></div></div>
+        </article>
+
+        <article class="producto" data-categoria="rollos">
+          <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=700&q=80" alt="Rollos de sushi con salmón">
+          <div class="producto-info"><span class="producto-tipo">ESPECIALIDAD</span><h3>Salmon Roll</h3><p>Salmón, aguacate y queso crema.</p><div class="producto-pie"><strong>$110 MXN</strong><button class="agregar" data-producto="Salmon Roll">Elegir +</button></div></div>
+        </article>
+
+        <article class="producto" data-categoria="rollos">
+          <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=700&q=80" alt="Sushi roll con ingredientes frescos">
+          <div class="producto-info"><span class="producto-tipo">TOQUE PICANTE</span><h3>Spicy Tuna</h3><p>Atún, pepino y salsa picante.</p><div class="producto-pie"><strong>$120 MXN</strong><button class="agregar" data-producto="Spicy Tuna">Elegir +</button></div></div>
+        </article>
+
+        <article class="producto" data-categoria="rollos">
+          <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=700&q=80" alt="Sushi empanizado">
+          <div class="producto-info"><span class="producto-tipo">CRUJIENTE</span><h3>Tempura Roll</h3><p>Rollo crujiente con salsa especial.</p><div class="producto-pie"><strong>$125 MXN</strong><button class="agregar" data-producto="Tempura Roll">Elegir +</button></div></div>
+        </article>
+
+        <article class="producto" data-categoria="nigiri">
+          <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=700&q=80" alt="Nigiri de salmón">
+          <div class="producto-info"><span class="producto-tipo">TRADICIONAL</span><h3>Nigiri de salmón</h3><p>Arroz sazonado y salmón.</p><div class="producto-pie"><strong>$100 MXN</strong><button class="agregar" data-producto="Nigiri de salmón">Elegir +</button></div></div>
+        </article>
+
+    
+      </div>
+      <p class="nota">Precios y platillos de ejemplo para este proyecto escolar.</p>
+    </section>
+
+    <section class="seccion" id="galeria">
+      <div class="seccion-titulo">
+        <span class="etiqueta">UNA FIESTA PARA LOS SENTIDOS</span>
+        <h2>Nuestra <span>galería</span></h2>
+        <p>Colores, texturas y sabores que enamoran.</p>
+      </div>
+      <div class="galeria">
+        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=85" alt="Selección de rollos de sushi">
+        <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=900&q=85" alt="Sushi con salmón">
+        <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=900&q=85" alt="Variedad de sushi">
+        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=85" alt="Platillo japonés">
+        <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=900&q=85" alt="Nigiri tradicional">
+        <img src="https://images.unsplash.com/photo-1563612116625-3012372fccce?auto=format&fit=crop&w=900&q=85" alt="Presentación de comida japonesa">
+      </div>
+    </section>
+
+    <section class="reserva" id="reservaciones">
+      <div class="reserva-intro">
+        <span class="etiqueta">TU MESA TE ESPERA</span>
+        <h2>Haz tu <span>reservación.</span></h2>
+        <p>Completa el formulario para registrar una solicitud de mesa.</p>
+        <div class="dato-reserva"><span>◷</span><div><strong>Horario de ejemplo</strong><p>Lunes a domingo<br>12:00 p. m. – 10:00 p. m.</p></div></div>
+        <div class="dato-reserva"><span>⌖</span><div><strong>Ubicación de ejemplo</strong><p>Ciudad Guzmán, Jalisco, México</p></div></div>
+      </div>
+
+      <form id="formularioReserva" class="formulario">
+        <h3>Reserva tu experiencia</h3>
+        <p>Los campos con * son obligatorios.</p>
+
+        <label for="nombre">Nombre completo *</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" maxlength="80" required>
+
+        <label for="correo">Correo electrónico *</label>
+        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" maxlength="120" required>
+
+        <label for="telefono">Teléfono *</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" pattern="[0-9]{10}" maxlength="10" inputmode="numeric" required>
+        <small class="ayuda">Escribe los 10 dígitos de tu teléfono, sin espacios.</small>
+
+        <div class="formulario-columnas">
+          <div><label for="fecha">Fecha *</label><input type="date" id="fecha" name="fecha" required></div>
+          <div><label for="hora">Hora *</label><select id="hora" name="hora" required><option value="">Elegir hora</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option></select></div>
+        </div>
+
+        <label for="personas">Número de personas *</label>
+        <select id="personas" name="personas" required>
+          <option value="">Seleccionar</option><option value="1">1 persona</option><option value="2">2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option><option value="5">5 personas</option><option value="6">6 personas</option><option value="7">7 personas</option><option value="8">8 personas</option>
+        </select>
+
+        <label for="comentarios">Comentarios (opcional)</label>
+        <textarea id="comentarios" name="comentarios" rows="3" maxlength="300" placeholder="¿Tienes alguna solicitud especial?"></textarea>
+
+        <button type="submit" class="boton boton-rojo boton-enviar">Solicitar reservación ↗</button>
+        <p id="mensajeReserva" class="mensaje" role="status" aria-live="polite"></p>
+        <p class="nota">Demostración escolar: la solicitud se guarda en este navegador. No se envía al restaurante.</p>
+      </form>
+    </section>
+
+    <section class="contacto seccion" id="contacto">
+      <div class="seccion-titulo">
+        <span class="etiqueta">ESTAMOS PARA TI</span>
+        <h2>Visítanos en <span>Sushi Paradise</span></h2>
+        <p>Consulta nuestros datos de ejemplo para este proyecto.</p>
+      </div>
+      <div class="contacto-tarjetas">
+        <article><span>⌖</span><h3>Dirección</h3><p>Ciudad Guzmán, Jalisco, México.</p></article>
+        <article><span>◷</span><h3>Horario</h3><p>Todos los días<br>12:00 p. m. – 10:00 p. m.</p></article>
+        <article><span>✉</span><h3>Correo</h3><p>contacto@sushiparadise.example</p></article>
+      </div>
+      <p class="nota">Los datos de ubicación y contacto son ficticios. Sustitúyelos por datos reales si el restaurante existe.</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <a class="logo" href="#inicio"><span class="logo-icono">寿</span><span>Sushi <b>Paradise</b><small>EL ARTE DEL SABOR JAPONÉS</small></span></a>
+    <p>© <span id="anio"></span> Sushi Paradise. Proyecto escolar de desarrollo web.</p>
+    <a href="#inicio" class="volver">Volver arriba ↑</a>
+  </footer>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+</body>
+</html>
